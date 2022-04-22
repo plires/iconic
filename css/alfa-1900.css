@@ -1,0 +1,256 @@
+/* Available */
+.available .carusel {
+  margin-bottom: 20px;
+}
+
+.available .data {
+  text-transform: uppercase;
+  color: #444242;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.available .data .title {
+  font-weight: 700;
+  color: #008045;
+}
+
+.available .data ul li,
+.available .specs ul li {
+  border-bottom: solid 1px #919091;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.available .data ul li:last-child,
+.available .specs ul li:last-child {
+  border-bottom: none;
+}
+
+.available .data ul li p,
+.available .specs ul li p {
+  margin-bottom: 0;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.available .data ul li p span,
+.available .specs ul li p span {
+  color: #444242;
+  font-size: 1.5rem;
+}
+
+.available .data .modelo {
+  font-size: calc(1.325rem + .9vw);
+  line-height: 1.2;
+}
+
+.available .data .modelo span {
+  font-size: 2.5rem;
+}
+
+.available .data .caracteristicas {
+  color: var(--primary-color);
+}
+
+.available .descripcion_auto {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.available .descripcion_auto h2,
+.available .specs h2 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  border-bottom: solid 1px var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.available .descripcion_auto h4,
+.available .descripcion_auto p {
+  color: #211915;
+}
+
+.available .content_button {
+  text-align: center;
+}
+
+.available .specs {
+  text-transform: uppercase;
+}
+
+.available .specs .title {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+}
+
+.available .specs .subtitulo {
+  margin-bottom: 20px;
+  border-bottom: solid 1px var(--primary-color);
+}
+
+.available .specs .content_categoria {
+  margin-bottom: 20px;
+}
+/* Available end */
+
+/* Galeria */
+.galeria {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.galeria .img_galeria {
+  margin-bottom: 12px;
+}
+/* Galeria end */
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+  /* Available */
+  .available {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  /* Available end */
+
+  /* Galeria */
+  .galeria .img_galeria {
+    margin-bottom: 24px;
+  }
+  /* Galeria end */
+
+}
+
+@media (min-width: 992px) {
+
+  /* Available */
+  .available {
+    margin-bottom: 60px;
+  }
+
+  .available .carusel,
+  .available .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .available .data {
+    padding-left: 60px;
+  }
+
+  .available .content_button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .available .content_button button {
+    font-size: 1.25rem;
+  }
+
+  .available .specs .content_categoria {
+    margin-bottom: 60px;
+  }
+
+  .available .specs .row:last-child .content_categoria:nth-child(1),
+  .available .specs .row:last-child .content_categoria:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .available .specs .title {
+    margin-bottom: 60px;
+  }
+  /* Available end */
+
+}
+
+@media (min-width: 1200px) {
+
+  /* Available */
+  .available .carusel, .available .data {
+    justify-content: flex-start;
+    margin-bottom: 100px;
+  }
+
+  .available .descripcion_auto {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 60px!important;
+  }
+
+  .available .descripcion_auto h2 {
+    margin-bottom: 60px;
+  }
+
+  .available .descripcion_auto p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+  }
+
+  .available .specs {
+    padding-left: 60px;
+  }
+
+  .available .specs .content_categoria {
+    margin-bottom: 30px;
+  }
+  /* Available end */
+
+  /* Galeria */
+  .galeria {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  /* Galeria end */
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1600px) {
+
+  /* Available */
+  .available .data ul li p, .available .specs ul li p {
+    font-size: 1.25rem;
+  }
+
+  .available .data ul li p span, .available .specs ul li p span {
+    font-size: 1.65rem;
+  }
+
+  .available .descripcion_auto h4 {
+    font-size: 1.75rem;
+  }
+
+  .available .descripcion_auto p {
+    margin-bottom: 60px;
+    font-size: 1.35rem;
+  }
+
+  .available .data ul li, .available .specs ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .available .specs .subtitulo {
+    font-size: 2rem;
+
+  }
+  /* Available end */
+
+}
+
+
+

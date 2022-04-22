@@ -41,7 +41,7 @@
 
           <div class="row">
             
-            <div class="col-md-6 carusel">
+            <div class="col-lg-6 carusel">
               <div id="carouselfianchiControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
@@ -76,10 +76,10 @@
               </div>
             </div>
 
-            <div class="col-md-6 data">
+            <div class="col-lg-6 data">
               <ul>
                 <li><h2 class="title">available</h2></li>
-                <li><p class="modelo">1952 alfa romeo<br>1900 c52</p></li>
+                <li><p class="modelo">1952 alfa romeo<br><span>1900 c52</span></p></li>
                 <li><p class="caracteristicas">ENGINE SIZE<br><span>1600</span></p></li>
                 <li><p class="caracteristicas">BODY STYLE<br><span>roadster</span></p></li>
                 <li><p class="caracteristicas">MILES<br><span>3,009</span></p></li>
@@ -92,9 +92,9 @@
 
           <div class="row">
             
-            <div class="col-md-6 descripcion_auto">
+            <div class="col-xl-6 descripcion_auto">
               <h2>description</h2>
-              <h3>Hand built full Aluminum body</h3>
+              <h4>Hand built full Aluminum body</h4>
               <p>
                 <span>1952 Alfa Romeo 1900 C52 Disco Volante Fianchi Stretti.</span>
               </p>
@@ -118,15 +118,18 @@
                 Alfa Romeo.
               </p>
 
-              <button data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-primary">contact dealer</button>
+              <div class="content_button">
+                <button data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-primary">contact dealer</button>
+              </div>
+
             </div>
 
-            <div class="col-md-6 specs">
+            <div class="col-xl-6 specs">
               <h2 class="title">specs</h2>
 
               <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">engine</h3>
                   <ul>
                     <li><p class="caracteristicas_small">ENGINE type<br><span>gasoline</span></p></li>
@@ -135,7 +138,7 @@
                   </ul>                  
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">body</h3>
                   <ul>
                     <li><p class="caracteristicas_small">body color<br><span>rosso</span></p></li>
@@ -149,7 +152,7 @@
 
               <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">basic</h3>
                   <ul>
                     <li><p class="caracteristicas_small">year<br><span>1952</span></p></li>
@@ -159,7 +162,7 @@
                   </ul>                  
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">interior</h3>
                   <ul>
                     <li><p class="caracteristicas_small">interior Color<br><span>Burgundy</span></p></li>
