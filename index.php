@@ -32,68 +32,13 @@
   <sction class="page">
 
     <!-- Slide -->
-    <section class="container-fluid carousel-fade slides_home">
-
-      <div class="row">
-
-        <div class="col-md-12 p-0">
-
-          <div id="carouselHomeControls" class="carousel slide" data-bs-ride="carousel">
-
-            <div class="carousel-inner">
-
-              <div id="slide_1" class="carousel-item active">
-                <div class="content">
-                  <h1>Alfa Romeo Fianchi Stretti</h1>
-                  <div class="content_button">
-                    <a href="#" class="transition btn btn-primary">discover more</a>
-                  </div>
-                </div>
-              </div>
-
-              <div id="slide_2" class="carousel-item">
-                <div class="content">
-                  <h2>1933 Alfa Romeo 8c<br><span>Monza Brianza</span></h2>
-                  <div class="content_button">
-                    <a href="#" class="transition btn btn-primary">discover more</a>
-                  </div>
-                </div>
-              </div>
-
-              <div id="slide_3" class="carousel-item">
-                <div class="content">
-                  <h2>1969 Mercedes-Benz Ssk<br><span>Recreation Comte Trossi</span></h2>
-                  <div class="content_button">
-                    <a href="#" class="transition btn btn-primary">discover more</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomeControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselHomeControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-    <!-- Slide end -->
+    <?php include('includes/slide-home.php'); ?>
 
     <!-- Legacy -->
     <section data-aos="fade-up" class="container-fluid legacy">
       <div class="row">
 
-        <div style="position: relative;" class="col-lg-6 ps-0 img">
+        <div class="col-lg-6 ps-0 img">
           <img class="img-fluid" src="./img/legacy.jpg" alt="legacy iconic">
           <div class="shape"></div>
         </div>
@@ -203,19 +148,8 @@
     </section>
     <!-- Legacy end -->
 
-    <!-- Video -->
-    <section data-aos="fade-up" class="container-fluid p-0 video">
-      <div class="row">
-
-        <div class="col-md-12">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://player.vimeo.com/video/700977151?h=4000b6e842&autoplay=1&loop=1&title=0&portrait=0&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- Video end -->
+    <!-- Slide Video Alfa 1900 -->
+    <?php include('includes/slide-alfa-1900.php'); ?>
 
     <!-- Story -->
     <section data-aos="fade-up" class="container-fluid story">
