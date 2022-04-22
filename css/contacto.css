@@ -1,0 +1,104 @@
+/* Modal Contacto */
+.modal-content {
+  box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none;
+  background: #282828;
+  color: white;
+  font-family: 'Arimo', sans-serif;
+}
+
+.modal-header {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.modal-body {
+  padding-bottom: 30px;
+}
+
+.modal-header h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.modal-header .btn-close {
+  color: white!important;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  font-size: 1.75rem;
+  background: transparent;
+}
+
+.modal-header .logo_formulario {
+  margin-bottom: 25px;
+}
+
+#contactModal .alert-danger {
+  font-size: 0.85rem;
+  background-color: red;
+  color: white;
+}
+
+.modal-body .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  border-bottom: solid 1px white;
+  color: rgb(235, 235, 235);
+}
+
+.modal-body .form-control:focus {
+  box-shadow: none;
+}
+
+.modal-body #send {
+  width: 100%;
+  background: var(--primary-color)!important;
+  border-color: var(--primary-color)!important;
+  color: white!important;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.modal-body #send:hover {
+  background: white!important;
+  border-color: white!important;
+  color: var(--primary-color)!important;
+}
+/* Modal Contacto end */
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+
+

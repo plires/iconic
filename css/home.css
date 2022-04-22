@@ -1,0 +1,546 @@
+/* Slide Home */
+.slides_home {
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+
+.slides_home .carousel-item {
+  position: relative;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  background-position: 50% 50%!important;
+  height: 520px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slides_home #slide_1 {
+  background: url('../img/slide-1-mobile.jpg');
+}
+
+.slides_home #slide_2 {
+  background: url('../img/slide-2-mobile.jpg');
+}
+
+.slides_home #slide_3 {
+  background: url('../img/slide-3-mobile.jpg');
+}
+
+.slides_home .carousel-control-prev,
+.slides_home .carousel-control-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  top: calc( 50% - 16px );
+}
+
+.slides_home .carousel-item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.slides_home h1, 
+.slides_home h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  padding-left: 20px;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.slides_home h1 span, 
+.slides_home h2 span {
+  font-size: 1rem;
+}
+
+.slides_home .carousel-item a {
+  font-size: 0.85rem!important;
+}
+/* Slide Home end */
+
+/* Legacy */
+.legacy {
+  margin-bottom: 30px;
+}
+
+.legacy .img {
+  padding-left: calc(var(--bs-gutter-x) * .5)!important;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.legacy .data {
+  margin-bottom: 20px;
+}
+
+.legacy .data h2,
+.legacy .data h3 {
+  font-weight: 100;
+}
+
+.legacy .data h2 {
+  font-size: 2rem;
+}
+
+.legacy .data h3 {
+  border-top: solid 1px #d3d4d6;
+  border-bottom: solid 1px #d3d4d6;
+  color: var(--primary-color);
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+
+.legacy .detalle {
+  margin-bottom: 20px;
+}
+
+.legacy .detalle .car_details {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.legacy .detalle .car_details img {
+  margin-bottom: 10px;
+}
+
+.legacy .detalle .car_details h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #d3d4d6;
+}
+
+.legacy .detalle .car_details p {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+/* Legacy end */
+
+/* Video */
+.video {
+  margin-bottom: 30px;
+}
+/* Video end */
+
+/* Story */
+.story {
+  margin-bottom: 30px;
+}
+
+.story h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  border-bottom: solid 1px #d3d4d6;
+  padding-bottom: 5px;
+}
+/* Story end */
+
+/* Launch */
+.lauch {
+  position: relative;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  background-position: 50% 50%!important;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url('../img/background.jpg');
+}
+
+.lauch .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lauch .content img {
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+.lauch .content h2 {
+  font-size: 1.15rem;
+  color: #a4a5ab;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+}
+
+.lauch .content button {
+  border-radius: 0;
+  background: var(--primary-color)!important;
+  border: none!important;
+  color: white!important;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.lauch .content button:hover {
+  background: white!important;
+  color: var(--primary-color)!important;
+}
+/* Launch end */
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+  /* Legacy */
+  .legacy .img img {
+    width: 100%;
+    max-width: 525px;
+  }
+  /* Legacy end */
+
+  /* Launch */
+  .lauch .content img {
+    max-width: 300px;
+  }
+
+  .lauch .content h2 {
+    margin-bottom: 60px;
+    letter-spacing: 0.6rem;
+  }
+  /* Launch end */
+
+}
+
+@media (min-width: 768px) {
+
+  /* Slide Home */
+  .slides_home .carousel-item {
+    padding-bottom: 30px;
+    height: 435px;
+  }
+
+  .slides_home #slide_1 {
+    background: url('../img/slide-1.jpg');
+  }
+
+  .slides_home #slide_2 {
+    background: url('../img/slide-2.jpg');
+  }
+
+  .slides_home #slide_3 {
+    background: url('../img/slide-3.jpg');
+  }
+
+  .slides_home h1, 
+  .slides_home h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .slides_home h1 span, 
+  .slides_home h2 span {
+    font-size: 1.15rem;
+    letter-spacing: inherit;
+  }
+  /* Slide Home end */
+
+  /* Legacy */
+  .legacy .detalle .car_details h4 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .legacy .detalle .car_details p {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+  /* Legacy end */
+
+  /* Launch */
+  .lauch .content img {
+    max-width: 400px;
+  }
+
+  .lauch .content h2 {
+    letter-spacing: 0.9rem;
+  }
+
+  .lauch .content button {
+    font-size: 1rem;
+  }
+  /* Launch end */
+
+}
+
+@media (min-width: 992px) {
+
+  /* Slide Home */
+  .slides_home  {
+    margin-bottom: 0;
+  }
+
+  .slides_home .carousel-item {
+    height: 560px;
+  }
+
+  .slides_home h1, 
+  .slides_home h2 {
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+
+  .slides_home h1 span, 
+  .slides_home h2 span {
+    font-size: 1.25rem;
+    margin-top: -20px;
+  }
+  /* Slide Home end */
+
+  /* Legacy */
+  .legacy {
+    margin-bottom: 30px;
+  }
+
+  .legacy .img,
+  .legacy .data {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .legacy .img {
+    position: relative;
+    padding-left: 0!important;
+  }
+
+  .legacy .img img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .legacy .data {
+    padding-left: 30px;
+    padding-top: 20px;
+    align-self: center;
+  }
+
+  .legacy .shape {
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 95% 100%);
+    content: '';
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: calc(var(--bs-gutter-x) * .5);
+    height: 100%;
+  }
+
+
+  .legacy .data p {
+    margin-bottom: 0;
+  }
+  /* Legacy end */
+
+  /* Story */
+  .story .data,
+  .story .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .story .img {
+    align-items: center;
+  }
+  /* Story end */
+
+  /* Launch */
+  .lauch {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .lauch .content img {
+    max-width: 550px;
+    margin-bottom: 30px;
+  }
+
+  .lauch .content h2 {
+    font-size: 1.25rem;
+    letter-spacing: 1.6rem;
+    margin-bottom: 100px;
+  }
+  /* Launch end */
+
+}
+
+@media (min-width: 1200px) {
+
+  /* Slide Home */
+  .slides_home .carousel-item {
+    height: 700px;
+  }
+
+  .slides_home h1, 
+  .slides_home h2 {
+    font-size: 3rem;
+    line-height: 0.8;
+    margin-top: 15px;
+  }
+
+  .slides_home h1 span, 
+  .slides_home h2 span {
+    font-size: 1.6rem;
+  }
+
+  .slides_home .carousel-item a {
+    font-size: 1rem!important;
+    letter-spacing: 0.2rem;
+  }
+  /* Slide Home end */
+
+  .legacy .data h2 {
+    font-size: 2.5rem;
+  }
+
+  .legacy .data h3 {
+    font-size: 1.25rem;
+  }
+
+  .legacy .data {
+    padding-top: 0;
+  }
+
+  .legacy .detalle .car_details h4 {
+    font-size: 1.2rem;
+  }
+
+  .legacy .detalle .car_details p {
+    font-size: 1rem;
+  }
+  /* Legacy */
+
+  /* Video */
+  .video {
+    margin-bottom: 60px;
+  }
+  /* Video end */
+
+  /* Story */
+  .story h2 {
+    font-size: 2.5rem;
+  }
+  /* Story end */
+
+  /* Launch */
+  .lauch .content img {
+    max-width: 700px;
+  }
+
+  .lauch .content h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2.3rem;
+    margin-bottom: 150px;
+  }
+
+  .lauch .content button {
+    font-size: 1.25rem;
+    padding: 10px 40px;
+  }
+  /* Launch end */
+
+}
+
+@media (min-width: 1400px) {
+
+  /* Slide Home */
+  .slides_home .carousel-item {
+    height: 810px;
+  }
+
+  .slides_home h1, 
+  .slides_home h2 {
+    margin-top: 20px;
+    font-size: 3.5rem;
+  }
+
+  .slides_home h1 span, 
+  .slides_home h2 span {
+    font-size: 1.75rem;
+  }
+  /* Slide Home end */
+
+  /* Legacy */
+  .legacy .data h3 {
+    margin-bottom: 35px;
+  }
+
+  .legacy .data p {
+    font-size: 1.15rem;
+  }
+
+  .legacy .detalle .car_details h4 {
+    font-size: 1.35rem;
+  }
+
+  .legacy .detalle .car_details p {
+    font-size: 1.15rem;
+  }
+  /* Legacy end */
+
+  /* Story */
+  .story .data p {
+    font-size: 1.15rem;
+  }
+  /* Story end */
+
+  /* Launch */
+  .lauch .content img {
+    max-width: 860px;
+    margin-bottom: 30px;
+  }
+
+  .lauch .content h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2.3rem;
+  }
+
+  .lauch .content button {
+    font-size: 1.5rem;
+  }
+  /* Launch end */
+
+}
+
+@media (min-width: 1600px) {
+
+  /* Slide Home */
+  .slides_home .carousel-item {
+    height: 100vh;
+    padding-bottom: 60px;
+  }
+
+  .slides_home .carousel-item a {
+    font-size: 1.25rem!important;
+  }
+  /* Slide Home end */
+
+  /* Legacy */
+  .legacy .detalle .car_details h4 {
+    font-size: 1.5rem;
+  }
+  /* Legacy end */
+
+  /* Story */
+  .story h2 {
+    margin-bottom: 35px;
+  }
+  /* Story end */
+
+}
