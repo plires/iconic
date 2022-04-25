@@ -10,7 +10,7 @@ const itemsFooter = document.getElementsByClassName('item')
 var hash = window.location.hash
 cleanHash = hash.replace("#", ""); //remove the #
 
-if (cleanHash !== '') {
+if (cleanHash !== '' && cleanHash !== 'msg_contacto' && cleanHash !== 'errors') {
   var itemMenu = document.getElementsByClassName(cleanHash)
   itemMenu[0].classList.add('active')
 }
