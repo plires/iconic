@@ -18,8 +18,7 @@
 
           <div class="copy">
             <p>All rights reserved &copy; <?= date('Y') ?>. Iconic Auto Sports. | 
-              <a class="transition" rel="noopener" target="_blank" href="mailto:info@iconicautosports.com">info@iconicautosports.com</a> | 
-              <a class="transition" rel="noopener" target="_blank" href="tel:393463799155">+39 346 3799155</a></p>
+              <a class="transition" rel="noopener" target="_blank" href="mailto:info@iconicautosports.com">info@iconicautosports.com</a>
           </div>
         </div>
 
