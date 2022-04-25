@@ -124,7 +124,7 @@ $('#send').click(function() { // validar formulario
 
   if (!errorsInFieldsFront) {
     grecaptcha.ready(function() {
-      grecaptcha.execute('6LflZIofAAAAAOuuw2MHK9vwm6RxVWo7c-v-tVIL', {
+      grecaptcha.execute('6Ld2854fAAAAALvYKuvvuEqNSyaAbqK4UnZUJXKW', {
         action: 'validarFormulario'
         }).then(function(token) {
         $('#form-contacto').prepend('<input type="hidden" name="token" value="' + token + '" >');
