@@ -211,7 +211,15 @@
           <div class="row">
             
             <div class="col-md-12">
-              PLUGIN DE INSTAGRAM????
+              <div class="header">
+                <h2>News</h2>
+                <div class="name_instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>@iconicautosports</span>
+                </div>
+              </div>
+              
+              <div data-mc-src="d6a41637-b093-476a-84cc-0381f58f769b#instagram"></div>
             </div>
 
           </div>
@@ -253,6 +261,7 @@
   <script type="text/javascript" src="./node_modules/aos/dist/aos.js"></script>
   <script src="./node_modules/jquery-easing/dist/jquery.easing.1.3.umd.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <script src="https://cdn2.woxo.tech/a.js#626711582e7bdb002f7adad2" async data-usrc></script>
 
   <?php 
 

@@ -143,6 +143,25 @@
 }
 /* Story end */
 
+/* Instagram */
+.instagram h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  border-bottom: solid 1px #d3d4d6;
+  padding-bottom: 5px;
+}
+
+.instagram .name_instagram {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.instagram .name_instagram i {
+  margin-right: 10px;
+}
+/* Instagram end */
+
 /* Launch */
 .lauch {
   position: relative;
@@ -259,6 +278,29 @@
     text-align: left;
   }
   /* Legacy end */
+
+  /* History */
+  .story {
+    margin-bottom: 60px;
+  }
+  /* History end */
+
+  /* Instagram */
+  .instagram .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .instagram .header {
+    border-bottom: solid 1px grey;
+  }
+
+  .instagram .header h2 {
+    border-bottom: none;
+    position: relative;
+  }
+  /* Instagram end */
 
   /* Launch */
   .lauch .content img {
@@ -437,6 +479,21 @@
     font-size: 2.5rem;
   }
   /* Story end */
+
+  /* Instagram */
+  .instagram .header h2 {
+    font-size: 2.5rem;
+  }
+
+  .instagram .header .name_instagram i,
+  .instagram .header .name_instagram span {
+    font-size: 1.5rem;
+  }
+
+  .instagram .header .name_instagram i {
+    font-weight: 700;
+  }
+  /* Instagram end */
 
   /* Launch */
   .lauch .content img {
