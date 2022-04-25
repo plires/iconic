@@ -20,7 +20,8 @@
 </head>
 <body>
   
-  <?php $current = 'fianchi'; ?>
+  <?php $menu = 'inventory'; ?>
+  <?php $submenu = 'fianchi'; ?>
 
   <!-- Modal -->
   <?php include('includes/contacto-modal.php'); ?>

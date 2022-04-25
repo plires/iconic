@@ -9,11 +9,44 @@
 
         <div class="data col-md-8">
 
-          <ul class="menu">
-            <li><a class="transition" href="#">Inventory</a></li>
-            <li><a class="transition" href="#">Legacy</a></li>
-            <li><a class="transition" href="#">Our Story</a></li>
-            <li><a class="transition" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+          <ul class="menu_footer">
+
+            <li class="item">
+              <?php $resMenu = $menu == 'inventory' ? 'active' : '';  ?>
+              <button class="transition <?= $resMenu ?>" onclick="activeSubMenuFooter()">Inventory
+                <i class="transition fa-solid fa-angle-down"></i>
+              </button>
+
+              <ul id="submenu_footer" class="transition">
+
+                <li>
+                  <?php $res = $submenu == 'ssk' ? 'active' : '';  ?>
+                  <a 
+                    class="transition <?= $res ?>" 
+                    href="./mercedes-benz-ssk-recreation.php">Mercedes Benz Comte Trossi</a>
+                </li>
+
+                <li>
+                  <?php $res = $submenu == 'monza' ? 'active' : '';  ?>
+                  <a 
+                    class="transition <?= $res ?>" 
+                    href="./alfa-romeo-monza-brianza.php">Alfa Romeo Monza Brianza</a>
+                </li>
+
+                <li>
+                  <?php $res = $submenu == 'fianchi' ? 'active' : '';  ?>
+                  <a 
+                    class="transition <?= $res ?>" 
+                    href="./alfa-romeo-fianchi-stretti.php">Alfa Romeo Fianchi Stretti
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="item"><a class="transition" href="./#legacy">Legacy</a></li>
+            <li class="item"><a class="transition" href="./#history">Our Story</a></li>
+            <li class="item"><a class="transition" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
           </ul>
 
           <div class="copy">

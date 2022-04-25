@@ -20,7 +20,8 @@
 </head>
 <body>
   
-  <?php $current = 'ssk'; ?>
+  <?php $menu = 'inventory'; ?>
+  <?php $submenu = 'ssk'; ?>
 
   <!-- Modal -->
   <?php include('includes/contacto-modal.php'); ?>

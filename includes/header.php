@@ -9,23 +9,61 @@
   <nav id="menu" class="transition">
     <ul>
 
-      <li id="content_active_submenu">
-        <button class="transition" onclick="activeSubMenu()">Inventory
+      <li class="item_header" id="content_active_submenu">
+        <?php $resMenuHeader = $menu == 'inventory' ? 'active' : '';  ?>
+        <button 
+          class="transition inventory <?= $resMenuHeader ?>" 
+          onclick="activeSubMenu()">Inventory
           <i id="arrow" class="transition fa-solid fa-angle-down"></i>
         </button>
 
         <ul id="submenu" class="transition">
 
-          <li><a class="transition" href="./mercedes-benz-ssk-recreation.php" onclick="menuToggle()">Mercedes Benz Comte Trossi</a></li>
-          <li><a class="transition" href="./alfa-romeo-monza-brianza.php" onclick="menuToggle()">Alfa Romeo Monza Brianza</a></li>
-          <li><a class="transition" href="./alfa-romeo-fianchi-stretti.php" onclick="menuToggle()">Alfa Romeo Fianchi Stretti</a></li>
+          <li>
+            <?php $resSubMenuHeader = $submenu == 'ssk' ? 'active' : '';  ?>
+            <a 
+              class="transition <?= $resSubMenuHeader ?>" 
+              href="./mercedes-benz-ssk-recreation.php" 
+              onclick="menuToggle()">Mercedes Benz Comte Trossi
+            </a>
+          </li>
+
+          <li>
+            <?php $resSubMenuHeader = $submenu == 'monza' ? 'active' : '';  ?>
+            <a class="transition <?= $resSubMenuHeader ?>" 
+              href="./alfa-romeo-monza-brianza.php" 
+              onclick="menuToggle()">Alfa Romeo Monza Brianza
+            </a>
+          </li>
+
+          <li>
+            <?php $resSubMenuHeader = $submenu == 'fianchi' ? 'active' : '';  ?>
+            <a 
+              class="transition <?= $resSubMenuHeader ?>" 
+              href="./alfa-romeo-fianchi-stretti.php" 
+              onclick="menuToggle()">Alfa Romeo Fianchi Stretti
+            </a>
+          </li>
+
         </ul>
 
       </li>
 
-      <li><a class="transition" href="#legacy" onclick="menuToggle()">Legacy</a></li>
-      <li><a class="transition" href="#history" onclick="menuToggle()">Our Story</a></li>
-      <li>
+      <li class="item_header">
+        <a 
+        class="transition legacy" 
+        href="./#legacy" 
+        onclick="menuToggle()">Legacy</a>
+      </li>
+
+      <li class="item_header">
+        <a 
+          class="transition history" 
+          href="./#history" 
+          onclick="menuToggle()">Our Story</a>
+      </li>
+
+      <li class="item_header">
         <a 
           class="transition" 
           href="#" 

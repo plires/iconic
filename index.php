@@ -20,7 +20,8 @@
 </head>
 <body>
   
-  <?php $current = 'index'; ?>
+  <?php $menu = 'index'; ?>
+  <?php $submenu = 'index'; ?>
 
   <!-- Modal -->
   <?php include('includes/contacto-modal.php'); ?>

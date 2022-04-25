@@ -20,7 +20,8 @@
 </head>
 <body>
   
-  <?php $current = 'monza'; ?>
+  <?php $menu = 'inventory'; ?>
+  <?php $submenu = 'monza'; ?>
 
   <!-- Modal -->
   <?php include('includes/contacto-modal.php'); ?>

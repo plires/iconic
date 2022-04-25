@@ -93,7 +93,18 @@ header .content_logo {
 header #content_active_submenu button {
   background-color: transparent!important;
   border: none!important;
+}
 
+header #content_active_submenu button.active,
+header #content_active_submenu a.active {
+  color: white!important;
+  border-bottom: solid 1px white!important;
+}
+
+header nav button.active,
+header nav a.active {
+  color: white!important;
+  border-bottom: solid 1px white!important;
 }
 
 header #hamburger {
@@ -263,13 +274,70 @@ footer {
 }
 
 footer p,
-footer a {
+footer a,
+footer button {
   font-size: 0.85rem;
-  color: #cfd0d2;
+  color: #797979;
 }
 
-footer a:hover {
-  color: #646464;
+footer p,
+footer a,
+footer button {
+  color: #797979;
+}
+
+footer button {
+  background-color: transparent!important;
+  border:  none!important;
+  text-transform: inherit;
+}
+
+footer a:hover,
+footer button:hover {
+  color: white;
+}
+
+footer a.active {
+  /*color: grey;*/
+}
+
+footer .menu_footer:first-child {
+  position: relative;
+}
+
+footer #submenu_footer {
+  opacity: 0;
+  display: none;
+}
+
+footer #submenu_footer.active_submenu {
+  opacity: 1;
+  background-color: var(--primary-color);
+  width: 220px;
+  left: calc( 50% - 110px );
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer #submenu_footer.active_submenu li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer #submenu_footer.active_submenu li a {
+  color: grey;
+}
+
+footer #submenu_footer.active_submenu li a.active {
+  color: white;
+}
+
+footer .item button.active,
+footer .item a.active {
+  color: white!important;
 }
 
 footer .logo {
@@ -380,8 +448,6 @@ footer .rrss {
     font-size: 1rem;
   }
 
-  
-
   header #hamburger {
     display: none;
   }
@@ -476,7 +542,7 @@ footer .rrss {
   }
 
   footer .data .copy {
-    border-top: solid 1px white;
+    border-top: solid 1px #797979;
     border-bottom: none;
     padding-top: 5px;
     padding-bottom: 0;
@@ -505,7 +571,7 @@ footer .rrss {
 
   /* Footer */
   footer .content {
-    border-right: solid 1px #cfd0d2;
+    border-right: solid 1px #797979;
   }
 
   footer .content:last-child,

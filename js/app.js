@@ -2,7 +2,18 @@ const header = document.getElementsByTagName("header")[0]
 const toggle = document.getElementById('hamburger')
 const menu = document.getElementById('menu')
 const submenu = document.getElementById('submenu')
+const submenuFooter = document.getElementById('submenu_footer')
 const arrow = document.getElementById('arrow')
+const itemsHeader = document.getElementsByClassName('item_header')
+const itemsFooter = document.getElementsByClassName('item')
+
+var hash = window.location.hash
+cleanHash = hash.replace("#", ""); //remove the #
+
+if (cleanHash !== '') {
+  var itemMenu = document.getElementsByClassName(cleanHash)
+  itemMenu[0].classList.add('active')
+}
 
 function menuToggle() {
 
@@ -36,9 +47,45 @@ function activeSubMenu() {
 
 }
 
+function activeSubMenuFooter() {
+  submenuFooter.classList.toggle('active_submenu')
+}
+
 toggle.addEventListener('click', function(){
 	menuToggle()
 });
+
+for (var i = 0; i < itemsHeader.length; i++) {
+
+  itemsHeader[i].addEventListener('click', function(e){
+    cleanMenuHeader(e)
+  });
+
+}
+
+for (var i = 0; i < itemsFooter.length; i++) {
+
+  itemsFooter[i].addEventListener('click', function(e){
+    cleanMenuFooter(e)
+  });
+
+}
+
+function cleanMenuHeader(e) {
+  for (var i = 0; i < itemsHeader.length; i++) {
+    itemsHeader[i].children[0].classList.remove('active')
+  }
+
+  e.target.classList.add('active')
+}
+
+function cleanMenuFooter(e) {
+  for (var i = 0; i < itemsFooter.length; i++) {
+    itemsFooter[i].children[0].classList.remove('active')
+  }
+
+  e.target.classList.add('active')
+}
 
 function showlHeader() {
   header.classList.add('header_small')
