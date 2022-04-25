@@ -22,6 +22,8 @@ use PHPMailer\PHPMailer\Exception;
             '{phone}',
             '{comment}',
             '{instagram}',
+            '{facebook}',
+            '{linkedin}',
             '{name_client}',
             '{mail_client}',
             '{base}'
@@ -33,6 +35,8 @@ use PHPMailer\PHPMailer\Exception;
             $post['phone'],
             $post['comments'],
             RRSS_INSTAGRAM,
+            RRSS_FACEBOOK,
+            RRSS_LINKEDIN,
             NAME_CLIENT,
             EMAIL_CLIENT,
             BASE
