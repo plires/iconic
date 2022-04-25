@@ -90,6 +90,12 @@ header .content_logo {
   z-index: 4;
 }
 
+header #content_active_submenu button {
+  background-color: transparent!important;
+  border: none!important;
+
+}
+
 header #hamburger {
   z-index: 4;
   cursor: pointer;
@@ -97,13 +103,17 @@ header #hamburger {
 
 header #submenu {
   display: none;
+  opacity: 0;
 }
 
 header #submenu.active_submenu {
   display: inline-block;
-  background: red;
+  background: var(--primary-color);
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 51px;
 }
-
 
 header nav {
   position: absolute;
@@ -138,11 +148,28 @@ header nav ul li {
 
 header nav ul li:first-child {
   padding-top: 0;
+  position: relative;
+}
+
+header nav ul li a,
+header nav ul li button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 header nav ul li:last-child {
   padding-bottom: 0;
   border-bottom: none;
+}
+
+header nav ul #content_active_submenu a i {
+  margin-left: 10px;
+}
+
+header #submenu li {
+  padding: 15px;
 }
 
 header nav a {
@@ -151,6 +178,34 @@ header nav a {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
+}
+
+header nav button {
+  color: #babbbf;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+header nav button i {
+  margin-left: 10px;
+}
+
+header #submenu a {
+  font-size: 0.9rem;
+}
+
+header #arrow.fa-angle-down {
+  animation: arrow_down 2s infinite linear;
+  font-size: 1rem;
+}
+
+header #arrow.fa-angle-up {
+  animation: arrow_up 2s infinite linear;
+  font-size: 1rem;
 }
 
 header nav i {
@@ -190,8 +245,7 @@ header.header_small {
   height: 60px;
 }
 
-header.header_small a,
-header.header_small i {
+header.header_small #hamburger {
   font-size: 1.5rem!important;
 }
 
@@ -278,6 +332,12 @@ footer .rrss {
     display: inline-block;
     margin-left: 20px;
   }
+
+  header #submenu.active_submenu {
+    left: 160px;
+    top: -1px;
+    width: auto;
+  }
   /* Header end */
 
   /* Footer */
@@ -306,11 +366,75 @@ footer .rrss {
 
   /* Header */
   header nav {
+    position: relative;
+    height: auto;
+    transform: scale(1);
     justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  header.header_small #menu li,
+  header.header_small #menu a,
+  header.header_small #menu button {
+    font-size: 1rem;
+  }
+
+  
+
+  header #hamburger {
+    display: none;
   }
 
   header nav ul {
-    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  header nav ul li {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 0;
+  }
+
+  header nav ul li:first-child {
+    padding-left: 0;
+  }
+
+  header nav ul li:last-child {
+    padding-right: 0;
+  }
+
+  header #submenu {
+    position: absolute;
+    display: inline-block;
+    background: var(--primary-color);
+    top: -500px;
+    left: 160px;
+    width: 280px;
+    text-align: center;
+    opacity: 0;
+  }
+
+  header #submenu.active_submenu {
+    opacity: 1;
+    top: 0;
+    width: 280px;
+  }
+
+  header.header_small #submenu {
+    width: 260px;
+  }
+
+  header.header_small #submenu.active_submenu {
+    width: 260px;
+  }
+
+  header.header_small #submenu a {
+    font-size: 0.8rem;
   }
   /* Header end */
 
@@ -395,10 +519,6 @@ footer .rrss {
 @media (min-width: 1400px) {
 
   /* Header */
-  header nav ul {
-    max-width: 30%;
-  }
-
   header nav a {
     font-size: 1.5rem;
   }
@@ -407,8 +527,38 @@ footer .rrss {
     color: #babbbb;
     font-size: 1.75rem;
   }
+
+  header #submenu li,
+  header #submenu a,
+  header #submenu button {
+    font-size: 0.9rem;
+  }
   /* Header end */
 
+}
+
+@keyframes arrow_down {
+  0% {
+    transform: translateY(5px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes arrow_up {
+  0% {
+    transform: translateY(5px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 

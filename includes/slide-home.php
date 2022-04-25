@@ -12,7 +12,7 @@
             <div class="content">
               <h1>Alfa Romeo Fianchi Stretti</h1>
               <div class="content_button">
-                <a href="#" class="transition btn btn-primary">discover more</a>
+                <a href="./alfa-romeo-fianchi-stretti.php" class="transition btn btn-primary">discover more</a>
               </div>
             </div>
           </div>
@@ -21,7 +21,7 @@
             <div class="content">
               <h2>1933 Alfa Romeo 8c<br><span>Monza Brianza</span></h2>
               <div class="content_button">
-                <a href="#" class="transition btn btn-primary">discover more</a>
+                <a href="./alfa-romeo-monza-brianza.php" class="transition btn btn-primary">discover more</a>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
             <div class="content">
               <h2>1969 Mercedes-Benz Ssk<br><span>Recreation Comte Trossi</span></h2>
               <div class="content_button">
-                <a href="#" class="transition btn btn-primary">discover more</a>
+                <a href="./mercedes-benz-ssk-recreation.php" class="transition btn btn-primary">discover more</a>
               </div>
             </div>
           </div>

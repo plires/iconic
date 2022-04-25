@@ -9,18 +9,22 @@
   <nav id="menu" class="transition">
     <ul>
 
-      <li>
-        <a class="transition" href="#" onclick="activeSubMenu()">Inventory</a>
+      <li id="content_active_submenu">
+        <button class="transition" onclick="activeSubMenu()">Inventory
+          <i id="arrow" class="transition fa-solid fa-angle-down"></i>
+        </button>
 
         <ul id="submenu" class="transition">
-          <li><a class="transition" href="#" onclick="menuToggle()">available</a></li>
-          <li><a class="transition" href="#" onclick="menuToggle()">sold</a></li>
+
+          <li><a class="transition" href="./mercedes-benz-ssk-recreation.php" onclick="menuToggle()">Mercedes Benz Comte Trossi</a></li>
+          <li><a class="transition" href="./alfa-romeo-monza-brianza.php" onclick="menuToggle()">Alfa Romeo Monza Brianza</a></li>
+          <li><a class="transition" href="./alfa-romeo-fianchi-stretti.php" onclick="menuToggle()">Alfa Romeo Fianchi Stretti</a></li>
         </ul>
 
       </li>
 
-      <li><a class="transition" href="#" onclick="menuToggle()">Legacy</a></li>
-      <li><a class="transition" href="#" onclick="menuToggle()">Our Story</a></li>
+      <li><a class="transition" href="#legacy" onclick="menuToggle()">Legacy</a></li>
+      <li><a class="transition" href="#history" onclick="menuToggle()">Our Story</a></li>
       <li>
         <a 
           class="transition" 

@@ -35,7 +35,7 @@
     <?php include('includes/slide-home.php'); ?>
 
     <!-- Legacy -->
-    <section data-aos="fade-up" class="container-fluid legacy">
+    <section id="legacy" data-aos="fade-up" class="container-fluid legacy">
       <div class="row">
 
         <div class="col-lg-6 ps-0 img">
@@ -152,7 +152,7 @@
     <?php include('includes/video-alfa-1900.php'); ?>
 
     <!-- Story -->
-    <section data-aos="fade-up" class="container-fluid story">
+    <section id="history" data-aos="fade-up" class="container-fluid story">
       <div class="row">
 
         <div class="col-md-10 offset-md-1">

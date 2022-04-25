@@ -2,6 +2,7 @@ const header = document.getElementsByTagName("header")[0]
 const toggle = document.getElementById('hamburger')
 const menu = document.getElementById('menu')
 const submenu = document.getElementById('submenu')
+const arrow = document.getElementById('arrow')
 
 function menuToggle() {
 
@@ -24,6 +25,15 @@ function menuToggle() {
 
 function activeSubMenu() {
   submenu.classList.toggle('active_submenu')
+
+  if ( arrow.classList.contains('fa-angle-down') ) {
+    arrow.classList.remove('fa-angle-down')
+    arrow.classList.add('fa-angle-up')
+  } else {
+    arrow.classList.add('fa-angle-down')
+    arrow.classList.remove('fa-angle-up')
+  }
+
 }
 
 toggle.addEventListener('click', function(){
