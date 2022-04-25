@@ -98,13 +98,11 @@ header #content_active_submenu button {
 header #content_active_submenu button.active,
 header #content_active_submenu a.active {
   color: white!important;
-  border-bottom: solid 1px white!important;
 }
 
 header nav button.active,
 header nav a.active {
   color: white!important;
-  border-bottom: solid 1px white!important;
 }
 
 header #hamburger {
@@ -501,6 +499,16 @@ footer .rrss {
 
   header.header_small #submenu a {
     font-size: 0.8rem;
+  }
+
+  header nav button.active,
+  header nav a.active {
+    border-bottom: solid 1px white!important;
+  }
+
+  header #content_active_submenu button.active,
+  header #content_active_submenu a.active {
+    border-bottom: solid 1px white!important;
   }
   /* Header end */
 
