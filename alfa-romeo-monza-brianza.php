@@ -33,7 +33,32 @@
   <sction class="page_fianchi">
 
     <!-- Slide -->
-    <?php include('includes/slide-home.php'); ?>
+    <section class="container-fluid carousel-fade slides_home">
+
+      <div class="row">
+
+        <div class="col-md-12 p-0">
+
+          <div id="carouselHomeControls" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+              <div id="slide_2" class="carousel-item active">
+                <div class="content">
+                  <h1>1933 Alfa Romeo 8c<br><span>Monza Brianza</span></h1>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Slide end -->
 
     <!-- Available -->
     <section data-aos="fade-up" class="container-fluid available">
