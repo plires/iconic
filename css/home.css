@@ -1,7 +1,7 @@
 /* Slide Home */
 .slides_home {
   margin-bottom: 60px;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .slides_home .carousel-item {
