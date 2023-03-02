@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This Mercedes-Benz SSK Comte Trossi (Recreation) is a unique masterpiece built to original specifications by OA Automobili. OA Automobili is an exclusive recreation car company which specializes only in unique classic cars. It's a master craftsman and coachbuilder based in Argentina.">
+  <meta name="description" content="This Mercedes-Benz SSK Comte Trossi (Recreation) is a unique masterpiece built to original specifications by Iconic Auto Sports SA. Iconic Auto Sports SA is an exclusive recreation car company which specializes only in unique classic cars. It's a master craftsman and coachbuilder based in Argentina.">
   <title>Iconic Auto Sports. - Mercedes Benz SSK Recreation</title>
 
   <!-- Favicons -->
@@ -122,7 +122,7 @@
             <div class="col-xl-6 descripcion_auto">
               <h2>description</h2>
               <p>
-                This Mercedes-Benz SSK Comte Trossi (Recreation) is a unique masterpiece built to original specifications by OA Automobili. OA Automobili is an exclusive recreation car company which specializes only in unique classic cars. It's a master craftsman and coachbuilder based in Argentina.
+                This Mercedes-Benz SSK Comte Trossi (Recreation) is a unique masterpiece built to original specifications by Iconic Auto Sports SA. Iconic Auto Sports SA is an exclusive recreation car company which specializes only in unique classic cars. It's a master craftsman and coachbuilder based in Argentina.
               </p>
 
               <p>
