@@ -110,18 +110,33 @@ header #hamburger {
   cursor: pointer;
 }
 
-header #submenu {
+header #submenu,
+header #submenu_available,
+header #submenu_sold {
   display: none;
   opacity: 0;
 }
 
-header #submenu.active_submenu {
+header #submenu.active_submenu,
+header #submenu_available.active_submenu,
+header #submenu_sold.active_submenu {
   display: inline-block;
   background: var(--primary-color);
   opacity: 1;
   position: absolute;
   left: 0;
   top: 51px;
+}
+
+header #submenu_available.active_submenu {
+  top: 61px;
+  background: #874f50;
+
+}
+
+header #submenu_sold.active_submenu {
+  top: 120px;
+  background: #874f50;
 }
 
 header nav {
@@ -136,7 +151,7 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+/*  text-align: center;*/
   transition: 0.5s;
   z-index: 3;
 }
@@ -210,6 +225,11 @@ header #submenu a {
 header #arrow.fa-angle-down {
   animation: arrow_down 2s infinite linear;
   font-size: 1rem;
+}
+
+header .item_small {
+  font-size: 0.85rem!important;
+  text-transform: capitalize!important;
 }
 
 header #arrow.fa-angle-up {
@@ -486,7 +506,7 @@ footer .rrss {
   header #submenu.active_submenu {
     opacity: 1;
     top: 0;
-    width: 280px;
+    width: 320px;
   }
 
   header.header_small #submenu {
@@ -494,7 +514,11 @@ footer .rrss {
   }
 
   header.header_small #submenu.active_submenu {
-    width: 260px;
+    width: 310px;
+  }
+
+  header.header_small #submenu_sold.active_submenu {
+    top: 105px;
   }
 
   header.header_small #submenu a {
@@ -503,12 +527,21 @@ footer .rrss {
 
   header nav button.active,
   header nav a.active {
-    border-bottom: solid 1px white!important;
+    font-weight: 700;
   }
 
-  header #content_active_submenu button.active,
-  header #content_active_submenu a.active {
-    border-bottom: solid 1px white!important;
+  header #arrow,
+  header #arrow_available,
+  header #arrow_sold {
+    font-size: 0.9rem;
+  }
+
+  header #submenu_sold.active_submenu {
+    top: 120px;
+  }
+
+  header.header_small #submenu_sold.active_submenu {
+    top: 106px;
   }
   /* Header end */
 
@@ -600,12 +633,6 @@ footer .rrss {
   header nav i {
     color: #babbbb;
     font-size: 1.75rem;
-  }
-
-  header #submenu li,
-  header #submenu a,
-  header #submenu button {
-    font-size: 0.9rem;
   }
   /* Header end */
 

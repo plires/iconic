@@ -6,8 +6,8 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hand built full Aluminum body 1952 Alfa Romeo 1900 C52 Disco Volante Fianchi Stretti.">
-  <title>Iconic Auto Sports. - Alfa Romeo Fianchi Stretti</title>
+  <meta name="description" content="This Mercedes-Benz SSK Comte Trossi (Recreation) is a unique masterpiece built to original specifications by OA Automobili. OA Automobili is an exclusive recreation car company which specializes only in unique classic cars. It's a master craftsman and coachbuilder based in Argentina.">
+  <title>Iconic Auto Sports. - Mercedes Benz SSK Recreation</title>
 
   <!-- Favicons -->
   <?php include('includes/favicon.php'); ?>
@@ -21,7 +21,8 @@
 <body>
   
   <?php $menu = 'inventory'; ?>
-  <?php $submenu = 'fianchi'; ?>
+  <?php $submenu = 'available'; ?>
+  <?php $submenuItem = 'mercedes_003'; ?>
 
   <!-- Modal -->
   <?php include('includes/contacto-modal.php'); ?>
@@ -30,7 +31,7 @@
   <?php include('includes/header.php'); ?>
 
   <!-- PAGE -->
-  <sction class="page_fianchi">
+  <sction class="page_ssk">
 
     <!-- Slide -->
     <section class="container-fluid carousel-fade slides_home">
@@ -43,9 +44,9 @@
 
             <div class="carousel-inner">
 
-              <div id="slide_1" class="carousel-item active">
+              <div id="slide_3" class="carousel-item active">
                 <div class="content">
-                  <h1>Alfa Romeo Fianchi Stretti</h1>
+                  <h1>1969 Mercedes-Benz Ssk<br><span>Recreation Comte Trossi</span></h1>
                 </div>
               </div>
 
@@ -68,34 +69,34 @@
           <div class="row">
             
             <div class="col-lg-6 carusel">
-              <div id="carouselfianchiControls" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselSskControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
                   <div class="carousel-item active">
-                    <img src="./img/alfa-1900-slide-1.jpg" class="d-block w-100" alt="slide 1 alfa romeo">
+                    <img src="./img/ssk-slide-1.jpg" class="d-block w-100" alt="slide 1 Mercedes benz ssk recreation">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/alfa-1900-slide-2.jpg" class="d-block w-100" alt="slide 2 alfa romeo">
+                    <img src="./img/ssk-slide-2.jpg" class="d-block w-100" alt="slide 2 Mercedes benz ssk recreation">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/alfa-1900-slide-3.jpg" class="d-block w-100" alt="slide 3 alfa romeo">
+                    <img src="./img/ssk-slide-3.jpg" class="d-block w-100" alt="slide 3 Mercedes benz ssk recreation">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/alfa-1900-slide-4.jpg" class="d-block w-100" alt="slide 4 alfa romeo">
+                    <img src="./img/ssk-slide-4.jpg" class="d-block w-100" alt="slide 4 Mercedes benz ssk recreation">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/alfa-1900-slide-5.jpg" class="d-block w-100" alt="slide 5 alfa romeo">
+                    <img src="./img/ssk-slide-5.jpg" class="d-block w-100" alt="slide 5 Mercedes benz ssk recreation">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/alfa-1900-slide-6.jpg" class="d-block w-100" alt="slide 6 alfa romeo">
+                    <img src="./img/ssk-slide-6.jpg" class="d-block w-100" alt="slide 6 Mercedes benz ssk recreation">
                   </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselfianchiControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSskControls" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselfianchiControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSskControls" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -105,12 +106,12 @@
             <div class="col-lg-6 data">
               <ul>
                 <li><h2 class="title">available</h2></li>
-                <li><p class="modelo">1952 alfa romeo<br><span>1900 c52</span></p></li>
-                <li><p class="caracteristicas">ENGINE SIZE<br><span>1600</span></p></li>
+                <li><p class="modelo">1966 mercedes-benz<br><span>SSK RECREATION</span></p></li>
+                <li><p class="caracteristicas">BODY NUMBER<br><span>003</span></p></li>
+                <li><p class="caracteristicas">ENGINE SIZE<br><span>manual</span></p></li>
                 <li><p class="caracteristicas">BODY STYLE<br><span>roadster</span></p></li>
-                <li><p class="caracteristicas">MILES<br><span>3,009</span></p></li>
-                <li><p class="caracteristicas">VIN<br><span>OHA005FS18</span></p></li>
-                <li><p class="caracteristicas">STOCK<br><span>FS18</span></p></li>
+                <li><p class="caracteristicas">VIN<br><span>RPA054906</span></p></li>
+                <li><p class="caracteristicas">STOCK<br><span>82321</span></p></li>
               </ul>
             </div>
 
@@ -120,28 +121,12 @@
             
             <div class="col-xl-6 descripcion_auto">
               <h2>description</h2>
-              <h4>Hand built full Aluminum body</h4>
               <p>
-                <span>1952 Alfa Romeo 1900 C52 Disco Volante Fianchi Stretti.</span>
+                This Mercedes-Benz SSK Comte Trossi (Recreation) is a unique masterpiece built to original specifications by OA Automobili. OA Automobili is an exclusive recreation car company which specializes only in unique classic cars. It's a master craftsman and coachbuilder based in Argentina.
               </p>
 
               <p>
-                The only Fianchi Stretti built by Alfa Romeo is sitting at the Schlumpf
-                museum in France.
-              </p>
-
-              <p>
-                The Fianch Stretti uses the Carrozzeria Touring Superleggera space
-                frame technology. This was the car that essentially set that standard
-                for the race cars of that era. This example is powered by an Alfa
-                Romeo dual overhead cam 1600 motor, matted to a 4 speed manual
-                transmission.
-              </p>
-
-              <p>
-                Exact dimensions and materials as the real car with a
-                high level of craftsman ship. The is titled clean in Florida as an 1952
-                Alfa Romeo.
+                This masterpiece known as the Comte Trossi has many components of the period. 1953 MB 300 engine, dual Solex Carbs, original Bosch dynamo, external MB water pump, MB box. Steering box manufactured in brass with worm gears of three entires (idem original). Stainless steel-coated exhaust pipe. Cast Iron front axle with brakes, bodywork completely made in handcrafted sheet metal according to scale, Rays wheels with Rudge centre (number 18), windsheild frame in chrome-plated solid brass, cast iron rear differential with rim brakes, rear light in stainless steel, dashboard with the horology as from original, Bosch ignition and light keys, 380mm cast-iron coated bells and Perrot brakes, Marshall Trilux headlights.
               </p>
 
               <div class="content_button">
@@ -159,17 +144,18 @@
                   <h3 class="subtitulo">engine</h3>
                   <ul>
                     <li><p class="caracteristicas_small">ENGINE type<br><span>gasoline</span></p></li>
-                    <li><p class="caracteristicas_small">BODY SizE<br><span>1600</span></p></li>
-                    <li><p class="caracteristicas_small">Fuel Specification<br><span>92/93 Octane</span></p></li>
+                    <li><p class="caracteristicas_small">BODY SizE<br><span>-</span></p></li>
+                    <li><p class="caracteristicas_small">Fuel Specification<br><span>-</span></p></li>
                   </ul>                  
                 </div>
 
                 <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">body</h3>
                   <ul>
-                    <li><p class="caracteristicas_small">body color<br><span>rosso</span></p></li>
-                    <li><p class="caracteristicas_small">BODY Style<br><span>ROADSTER</span></p></li>
-                    <li><p class="caracteristicas_small">doors<br><span>2</span></p></li>
+                    <li><p class="caracteristicas_small">body number<br><span>003</span></p></li>
+                    <li><p class="caracteristicas_small">body color<br><span>black</span></p></li>
+                    <li><p class="caracteristicas_small">BODY Style<br><span>roadster</span></p></li>
+                    <li><p class="caracteristicas_small">doors<br><span>-</span></p></li>
                     <li><p class="caracteristicas_small">paint type<br><span>-</span></p></li>
                   </ul>                  
                 </div>
@@ -181,20 +167,20 @@
                 <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">basic</h3>
                   <ul>
-                    <li><p class="caracteristicas_small">year<br><span>1952</span></p></li>
-                    <li><p class="caracteristicas_small">make<br><span>alfa romeo</span></p></li>
-                    <li><p class="caracteristicas_small">year<br><span>1900</span></p></li>
-                    <li><p class="caracteristicas_small">miles<br><span>10900</span></p></li>
+                    <li><p class="caracteristicas_small">year<br><span>1969</span></p></li>
+                    <li><p class="caracteristicas_small">make<br><span>mercedes-benz</span></p></li>
+                    <li><p class="caracteristicas_small">model<br><span>ssk recreation</span></p></li>
+                    <li><p class="caracteristicas_small">miles<br><span>-</span></p></li>
                   </ul>                  
                 </div>
 
                 <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">interior</h3>
                   <ul>
-                    <li><p class="caracteristicas_small">interior Color<br><span>Burgundy</span></p></li>
+                    <li><p class="caracteristicas_small">interior Color<br><span>Black</span></p></li>
                     <li><p class="caracteristicas_small">Secondary Interior Color<br><span>-</span></p></li>
-                    <li><p class="caracteristicas_small">Seating Type<br><span>Bucket</span></p></li>
-                    <li><p class="caracteristicas_small">Seat Material<br><span>Leather</span></p></li>
+                    <li><p class="caracteristicas_small">Seating Type<br><span>bench</span></p></li>
+                    <li><p class="caracteristicas_small">Seat Material<br><span>vinyl</span></p></li>
                     <li><p class="caracteristicas_small">Shifter Type<br><span>Floor</span></p></li>
                     <li><p class="caracteristicas_small">Center Console<br><span>No</span></p></li>
                   </ul>                  
@@ -211,9 +197,6 @@
     </section>
     <!-- Available end -->
 
-    <!-- Slide Video Alfa 1900 -->
-    <?php include('includes/video-alfa-1900.php'); ?>
-
     <!-- Galeria -->
     <section data-aos="fade-up" class="container-fluid galeria">
       <div class="row">
@@ -222,23 +205,23 @@
           <div class="row">
             
             <div class="col-md-6 img_galeria">
-              <img class="img-fluid" src="./img/alfa-1900-a.jpg" alt="galeria alfa romeo a">
+              <img class="img-fluid" src="./img/ssk-a.jpg" alt="galeria mercedes benz ssk recreation a">
             </div>
 
             <div class="col-md-6 img_galeria">
-              <img class="img-fluid" src="./img/alfa-1900-b.jpg" alt="galeria alfa romeo b">
+              <img class="img-fluid" src="./img/ssk-b.jpg" alt="galeria mercedes benz ssk recreation b">
             </div>
 
             <div class="col-md-6 img_galeria">
-              <img class="img-fluid" src="./img/alfa-1900-c.jpg" alt="galeria alfa romeo c">
+              <img class="img-fluid" src="./img/ssk-c.jpg" alt="galeria mercedes benz ssk recreation c">
             </div>
 
             <div class="col-md-6 img_galeria">
-              <img class="img-fluid" src="./img/alfa-1900-d.jpg" alt="galeria alfa romeo d">
+              <img class="img-fluid" src="./img/ssk-d.jpg" alt="galeria mercedes benz ssk recreation d">
             </div>
 
             <div class="col-md-12 img_galeria">
-              <img class="img-fluid" src="./img/alfa-1900-e.jpg" alt="galeria alfa romeo e">
+              <img class="img-fluid" src="./img/ssk-e.jpg" alt="galeria mercedes benz ssk recreation e">
             </div>
 
           </div>

@@ -2,10 +2,15 @@ const header = document.getElementsByTagName("header")[0]
 const toggle = document.getElementById('hamburger')
 const menu = document.getElementById('menu')
 const submenu = document.getElementById('submenu')
-const submenuFooter = document.getElementById('submenu_footer')
+const submenuAvailable = document.getElementById('submenu_available')
+const submenuSold = document.getElementById('submenu_sold')
 const arrow = document.getElementById('arrow')
+const arrowAvailable = document.getElementById('arrow_available')
+const arrowSold = document.getElementById('arrow_sold')
+const submenuFooter = document.getElementById('submenu_footer')
 const itemsHeader = document.getElementsByClassName('item_header')
 const itemsFooter = document.getElementsByClassName('item')
+const btnPrimaryInventory = document.getElementById('btn_primary_inventory')
 
 var hash = window.location.hash
 cleanHash = hash.replace("#", ""); //remove the #
@@ -34,15 +39,43 @@ function menuToggle() {
 
 }
 
-function activeSubMenu() {
-  submenu.classList.toggle('active_submenu')
+function activeSubMenu(currentItem, currentArrow) {
 
-  if ( arrow.classList.contains('fa-angle-down') ) {
-    arrow.classList.remove('fa-angle-down')
-    arrow.classList.add('fa-angle-up')
+  let item;
+  let flecha;
+
+  switch (currentItem) {
+  case 'submenu':
+    item = submenu;
+    flecha = arrow;
+    break;
+
+  case 'available':
+    item = submenuAvailable;
+    flecha = arrowAvailable;
+    submenuSold.classList.remove('active_submenu')
+    arrowSold.classList.add('fa-angle-down')
+    arrowSold.classList.remove('fa-angle-up')
+    break;
+
+  case 'sold':
+    item = submenuSold;
+    flecha = arrowSold;
+    submenuAvailable.classList.remove('active_submenu')
+    arrowAvailable.classList.add('fa-angle-down')
+    arrowAvailable.classList.remove('fa-angle-up')
+    break;
+
+  }
+  
+  item.classList.toggle('active_submenu')
+
+  if ( flecha.classList.contains('fa-angle-down') ) {
+    flecha.classList.remove('fa-angle-down')
+    flecha.classList.add('fa-angle-up')
   } else {
-    arrow.classList.add('fa-angle-down')
-    arrow.classList.remove('fa-angle-up')
+    flecha.classList.add('fa-angle-down')
+    flecha.classList.remove('fa-angle-up')
   }
 
 }
@@ -72,11 +105,27 @@ for (var i = 0; i < itemsFooter.length; i++) {
 }
 
 function cleanMenuHeader(e) {
+
+  if (event.target.tagName === "I") {
+    return
+  }
+
   for (var i = 0; i < itemsHeader.length; i++) {
     itemsHeader[i].children[0].classList.remove('active')
   }
 
-  e.target.classList.add('active')
+  if ( btnPrimaryInventory != e.target ) {
+    e.target.classList.add('active')
+  } else {
+    btnPrimaryInventory.classList.add('active')
+  }
+
+  if ( e.target.classList.contains('inventory') ) {
+    btnPrimaryInventory.classList.add('active')
+    submenuAvailable.classList.remove('active')
+    submenuSold.classList.remove('active')
+  }
+
 }
 
 function cleanMenuFooter(e) {

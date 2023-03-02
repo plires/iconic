@@ -21,7 +21,8 @@
 <body>
   
   <?php $menu = 'inventory'; ?>
-  <?php $submenu = 'monza'; ?>
+  <?php $submenu = 'available'; ?>
+  <?php $submenuItem = 'monza_001'; ?>
 
   <!-- Modal -->
   <?php include('includes/contacto-modal.php'); ?>
@@ -106,6 +107,7 @@
               <ul>
                 <li><h2 class="title">available</h2></li>
                 <li><p class="modelo">1933 alfa romeo<br><span>8C MONZA BRIANZA</span></p></li>
+                <li><p class="caracteristicas">BODY NUMBER<br><span>001</span></p></li>
                 <li><p class="caracteristicas">ENGINE SIZE<br><span>3200cc</span></p></li>
                 <li><p class="caracteristicas">VIN<br><span>132911</span></p></li>
                 <li><p class="caracteristicas">STOCK<br><span>82313</span></p></li>
@@ -145,6 +147,7 @@
                 <div class="col-lg-6 content_categoria">
                   <h3 class="subtitulo">body</h3>
                   <ul>
+                    <li><p class="caracteristicas_small">body number<br><span>001</span></p></li>
                     <li><p class="caracteristicas_small">body color<br><span>rosso</span></p></li>
                     <li><p class="caracteristicas_small">BODY Style<br><span>-</span></p></li>
                     <li><p class="caracteristicas_small">doors<br><span>-</span></p></li>
