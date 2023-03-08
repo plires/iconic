@@ -63,6 +63,12 @@
 }
 /* Slide Home end */
 
+/* Page Fianchi 011 */
+.page_fianchi_011 .slides_home #slide_1 {
+  background: url('../img/slide-fianchi_011-mobile.jpg');
+}
+/* Page Fianchi 011 end */
+
 /* Legacy */
 .page .legacy {
   margin-bottom: 30px;
@@ -265,6 +271,12 @@
     letter-spacing: inherit;
   }
   /* Slide Home end */
+
+  /* Page Fianchi 011 */
+  .page_fianchi_011 .slides_home #slide_1 {
+    background: url('../img/slide-fianchi_011.jpg');
+  }
+  /* Page Fianchi 011 end */
 
   /* Legacy */
   .legacy .detalle .car_details h4 {
