@@ -1,4 +1,4 @@
-<section class="container-fluid carousel-fade slides_home">
+<section class="container-fluid carousel-fade slides_home slides_preventa">
 
   <div class="row">
 
@@ -17,13 +17,14 @@
             </div>
           </div>
 
-          <div id="slide_2" class="carousel-item">
+          <div id="slide_2" class="carousel-item preventa">
             <div class="content">
               <h2>1933 Alfa Romeo 8c<br><span>Monza Brianza</span></h2>
               <div class="content_button">
                 <a href="./alfa-romeo-monza-brianza-001.php" class="transition btn btn-primary">discover more</a>
               </div>
             </div>
+            <a class="transition link_preventa" href="https://bringatrailer.com/listing/1933-alfa-romeo-8z-monzabrianza/" target="_blank" rel="noopener">LIVE AUCTION</a>
           </div>
 
           <div id="slide_3" class="carousel-item">

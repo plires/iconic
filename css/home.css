@@ -6,24 +6,24 @@
 
 .slides_home .carousel-item {
   position: relative;
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
-  background-position: 50% 50%!important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
   height: 520px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .slides_home #slide_1 {
-  background: url('../img/slide-1-mobile.jpg');
+  background: url("../img/slide-1-mobile.jpg");
 }
 
 .slides_home #slide_2 {
-  background: url('../img/slide-2-mobile.jpg');
+  background: url("../img/slide-2-mobile.jpg");
 }
 
 .slides_home #slide_3 {
-  background: url('../img/slide-3-mobile.jpg');
+  background: url("../img/slide-3-mobile.jpg");
 }
 
 .slides_home .carousel-control-prev,
@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   height: 35px;
-  top: calc( 50% - 16px );
+  top: calc(50% - 16px);
 }
 
 .slides_home .carousel-item .content {
@@ -43,7 +43,7 @@
   height: 100%;
 }
 
-.slides_home h1, 
+.slides_home h1,
 .slides_home h2 {
   font-size: 1.5rem;
   font-weight: 100;
@@ -53,19 +53,19 @@
   margin-bottom: 0;
 }
 
-.slides_home h1 span, 
+.slides_home h1 span,
 .slides_home h2 span {
   font-size: 1rem;
 }
 
 .slides_home .carousel-item a {
-  font-size: 0.85rem!important;
+  font-size: 0.85rem !important;
 }
 /* Slide Home end */
 
 /* Page Fianchi 011 */
 .page_fianchi_011 .slides_home #slide_1 {
-  background: url('../img/slide-fianchi_011-mobile.jpg');
+  background: url("../img/slide-fianchi_011-mobile.jpg");
 }
 /* Page Fianchi 011 end */
 
@@ -75,7 +75,7 @@
 }
 
 .legacy .img {
-  padding-left: calc(var(--bs-gutter-x) * .5)!important;
+  padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -171,12 +171,12 @@
 /* Launch */
 .lauch {
   position: relative;
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
-  background-position: 50% 50%!important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url('../img/background.jpg');
+  background: url("../img/background.jpg");
 }
 
 .lauch .content {
@@ -201,24 +201,60 @@
 
 .lauch .content button {
   border-radius: 0;
-  background: var(--primary-color)!important;
-  border: none!important;
-  color: white!important;
+  background: var(--primary-color) !important;
+  border: none !important;
+  color: white !important;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.85rem;
 }
 
 .lauch .content button:hover {
-  background: white!important;
-  color: var(--primary-color)!important;
+  background: white !important;
+  color: var(--primary-color) !important;
 }
 /* Launch end */
 
+/* Preventa */
+.preventa#slide_2 {
+  position: relative;
+}
+
+.preventa a:hover {
+  opacity: 0.8;
+}
+
+.preventa .carousel-item a,
+.slides_home .link_preventa {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 90px);
+  display: inline-block;
+  width: 180px;
+  height: 30px;
+  background: white;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem !important;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.slides_preventa .carousel-item .link_preventa {
+  font-size: 1rem !important;
+}
+/* Preventa end */
 
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
-
   /* Legacy */
   .legacy .img img {
     width: 100%;
@@ -236,11 +272,9 @@
     letter-spacing: 0.2rem;
   }
   /* Launch end */
-
 }
 
 @media (min-width: 768px) {
-
   /* Slide Home */
   .slides_home .carousel-item {
     padding-bottom: 30px;
@@ -248,24 +282,24 @@
   }
 
   .slides_home #slide_1 {
-    background: url('../img/slide-1.jpg');
+    background: url("../img/slide-1.jpg");
   }
 
   .slides_home #slide_2 {
-    background: url('../img/slide-2.jpg');
+    background: url("../img/slide-2.jpg");
   }
 
   .slides_home #slide_3 {
-    background: url('../img/slide-3.jpg');
+    background: url("../img/slide-3.jpg");
   }
 
-  .slides_home h1, 
+  .slides_home h1,
   .slides_home h2 {
     font-size: 2rem;
     line-height: 1.1;
   }
 
-  .slides_home h1 span, 
+  .slides_home h1 span,
   .slides_home h2 span {
     font-size: 1.15rem;
     letter-spacing: inherit;
@@ -274,7 +308,7 @@
 
   /* Page Fianchi 011 */
   .page_fianchi_011 .slides_home #slide_1 {
-    background: url('../img/slide-fianchi_011.jpg');
+    background: url("../img/slide-fianchi_011.jpg");
   }
   /* Page Fianchi 011 end */
 
@@ -326,13 +360,11 @@
     font-size: 1rem;
   }
   /* Launch end */
-
 }
 
 @media (min-width: 992px) {
-
   /* Slide Home */
-  .slides_home  {
+  .slides_home {
     margin-bottom: 0;
   }
 
@@ -340,13 +372,13 @@
     height: 560px;
   }
 
-  .slides_home h1, 
+  .slides_home h1,
   .slides_home h2 {
     font-size: 2.25rem;
     line-height: 1;
   }
 
-  .slides_home h1 span, 
+  .slides_home h1 span,
   .slides_home h2 span {
     font-size: 1.25rem;
     margin-top: -20px;
@@ -368,7 +400,7 @@
 
   .legacy .img {
     position: relative;
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
 
   .legacy .img img {
@@ -385,15 +417,14 @@
 
   .legacy .shape {
     clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 95% 100%);
-    content: '';
+    content: "";
     background-color: white;
     width: 100%;
     position: absolute;
     top: 0;
-    right: calc(var(--bs-gutter-x) * .5);
+    right: calc(var(--bs-gutter-x) * 0.5);
     height: 100%;
   }
-
 
   .legacy .data p {
     margin-bottom: 0;
@@ -430,30 +461,28 @@
     margin-bottom: 100px;
   }
   /* Launch end */
-
 }
 
 @media (min-width: 1200px) {
-
   /* Slide Home */
   .slides_home .carousel-item {
     height: 700px;
   }
 
-  .slides_home h1, 
+  .slides_home h1,
   .slides_home h2 {
     font-size: 3rem;
     line-height: 0.8;
     margin-top: 15px;
   }
 
-  .slides_home h1 span, 
+  .slides_home h1 span,
   .slides_home h2 span {
     font-size: 1.6rem;
   }
 
   .slides_home .carousel-item a {
-    font-size: 1rem!important;
+    font-size: 1rem !important;
     letter-spacing: 0.2rem;
   }
   /* Slide Home end */
@@ -523,22 +552,31 @@
   }
   /* Launch end */
 
+  /* Preventa */
+  .slides_preventa .carousel-item .link_preventa {
+    font-size: 1.25rem !important;
+    padding: 10px 20px;
+    width: 230px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 115px);
+  }
+  /* Preventa end */
 }
 
 @media (min-width: 1400px) {
-
   /* Slide Home */
   .slides_home .carousel-item {
     height: 810px;
   }
 
-  .slides_home h1, 
+  .slides_home h1,
   .slides_home h2 {
     margin-top: 20px;
     font-size: 3.5rem;
   }
 
-  .slides_home h1 span, 
+  .slides_home h1 span,
   .slides_home h2 span {
     font-size: 1.75rem;
   }
@@ -583,11 +621,9 @@
     font-size: 1.5rem;
   }
   /* Launch end */
-
 }
 
 @media (min-width: 1600px) {
-
   /* Slide Home */
   .slides_home .carousel-item {
     height: 100vh;
@@ -595,7 +631,7 @@
   }
 
   .slides_home .carousel-item a {
-    font-size: 1.25rem!important;
+    font-size: 1.25rem !important;
   }
   /* Slide Home end */
 
@@ -610,5 +646,4 @@
     margin-bottom: 35px;
   }
   /* Story end */
-
 }
