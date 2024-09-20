@@ -224,8 +224,7 @@
   opacity: 0.8;
 }
 
-.preventa .carousel-item a,
-.slides_home .link_preventa {
+.preventa .carousel-item a {
   position: absolute;
   top: calc(50% - 15px);
   left: calc(50% - 90px);
@@ -246,10 +245,6 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-}
-
-.slides_preventa .carousel-item .link_preventa {
-  font-size: 1rem !important;
 }
 /* Preventa end */
 
@@ -551,17 +546,6 @@
     padding: 10px 40px;
   }
   /* Launch end */
-
-  /* Preventa */
-  .slides_preventa .carousel-item .link_preventa {
-    font-size: 1.25rem !important;
-    padding: 10px 20px;
-    width: 230px;
-    height: 50px;
-    top: calc(50% - 25px);
-    left: calc(50% - 115px);
-  }
-  /* Preventa end */
 }
 
 @media (min-width: 1400px) {

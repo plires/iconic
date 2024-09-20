@@ -237,7 +237,7 @@
 
         <div class="col-md-12 content">
           <img src="./img/logo-sp40-large.png" class="img-fluid" alt="logo sp40 large">
-          <h2 class="arimo">LAUNCHING OCTOBER 2024</h2>
+          <h2 class="arimo">LAUNCHING JANUARY 2025</h2>
           <button 
             data-bs-toggle="modal" 
             data-bs-target="#contactModal" 

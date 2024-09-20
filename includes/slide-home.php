@@ -24,7 +24,6 @@
                 <a href="./alfa-romeo-monza-brianza-001.php" class="transition btn btn-primary">discover more</a>
               </div>
             </div>
-            <a class="transition link_preventa" href="https://bringatrailer.com/listing/1933-alfa-romeo-8z-monzabrianza/" target="_blank" rel="noopener">LIVE AUCTION</a>
           </div>
 
           <div id="slide_3" class="carousel-item">
