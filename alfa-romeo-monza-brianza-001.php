@@ -1,4 +1,4 @@
-<?php require('includes/config.inc.php'); ?>
+<?php require_once __DIR__ . '/includes/env-loader.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">

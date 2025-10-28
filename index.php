@@ -1,9 +1,10 @@
-<?php require ('includes/config.inc.php'); ?>
+<?php require_once __DIR__ . '/includes/env-loader.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="We love classic cars.  Everything about them, the curves, the design, the feeling of riding history, but something was missing.">
@@ -15,11 +16,12 @@
   <link rel="stylesheet" type="text/css" href="./node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./node_modules/aos/dist/aos.css"/>
+  <link rel="stylesheet" type="text/css" href="./node_modules/aos/dist/aos.css" />
   <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
-  
+
   <?php $menu = 'index'; ?>
   <?php $submenu = 'index'; ?>
 
@@ -48,7 +50,7 @@
           <h2>Legacy</h2>
           <h3>Get to know our award winning cars</h3>
           <p>
-            We love classic cars.  Everything about them, the curves, the design, the feeling of riding history, but something was missing. So we created the SP40 Restomod, a car that is both vintage and modern. A unique car that combines the best of both worlds.  Modern technology and the classic elegance of our award winning 1934 Ford 40 Special Speedster Boattail.
+            We love classic cars. Everything about them, the curves, the design, the feeling of riding history, but something was missing. So we created the SP40 Restomod, a car that is both vintage and modern. A unique car that combines the best of both worlds. Modern technology and the classic elegance of our award winning 1934 Ford 40 Special Speedster Boattail.
           </p>
         </div>
 
@@ -57,7 +59,7 @@
       <div class="row detalle">
         <div class="col-lg-10 offset-lg-1">
           <div class="row">
-            
+
             <div data-aos="fade-up" class="col-md-4 car_details">
 
               <div id="carouselMercedesControls" class="carousel slide" data-bs-ride="carousel">
@@ -90,7 +92,7 @@
             </div>
 
             <div data-aos="fade-up" class="col-md-4 car_details">
-              
+
               <div id="carouselAlfaControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -168,7 +170,7 @@
         <div class="col-md-10 offset-md-1">
 
           <div class="row">
-            
+
             <div class="col-lg-6 col-xl-5 data">
               <h2>Our Story</h2>
               <p>
@@ -176,7 +178,7 @@
               </p>
 
               <p>
-                It also restores original cars and has its own unique racing, classic and vintage models. In its production records, it denotes over 100 cars built through the last decades, many of them for the top classic car collectors in South America and abroad. 
+                It also restores original cars and has its own unique racing, classic and vintage models. In its production records, it denotes over 100 cars built through the last decades, many of them for the top classic car collectors in South America and abroad.
               </p>
 
               <p>
@@ -184,7 +186,7 @@
               </p>
 
               <p>
-                But it wasn´t until the year 2016 that it was formally registered under the name of OHA Automobili and in 2020 changed its name to Iconic Auto Sports.  The firm is currently settled in its new state of the art car boutique factory in San Isidro, Buenos Aires, Argentina.
+                But it wasn´t until the year 2016 that it was formally registered under the name of OHA Automobili and in 2020 changed its name to Iconic Auto Sports. The firm is currently settled in its new state of the art car boutique factory in San Isidro, Buenos Aires, Argentina.
               </p>
 
             </div>
@@ -209,7 +211,7 @@
         <div class="col-md-10 offset-md-1">
 
           <div class="row">
-            
+
             <div class="col-md-12">
               <div class="header">
                 <h2>News</h2>
@@ -218,7 +220,7 @@
                   <span>@iconicautosports</span>
                 </div>
               </div>
-              
+
               <div data-mc-src="d6a41637-b093-476a-84cc-0381f58f769b#instagram"></div>
             </div>
 
@@ -237,10 +239,10 @@
 
         <div class="col-md-12 content">
           <img src="./img/logo-sp40-large.png" class="img-fluid" alt="logo sp40 large">
-          <h2 class="arimo">LAUNCHING JANUARY 2025</h2>
-          <button 
-            data-bs-toggle="modal" 
-            data-bs-target="#contactModal" 
+          <h2 class="arimo">LAUNCHING VERY SOON</h2>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
             class="btn btn-primary arimo transition">JOIN THE WAITING LIST
           </button>
         </div>
@@ -254,7 +256,7 @@
 
   <!-- Footer -->
   <?php include('includes/footer.php'); ?>
-  
+
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js?render=<?= RECAPTCHA_KEY_SITE ?>"></script>
@@ -263,23 +265,21 @@
   <script type="text/javascript" src="js/app.js"></script>
   <script src="https://cdn2.woxo.tech/a.js#626711582e7bdb002f7adad2" async data-usrc></script>
 
-  <?php 
+  <?php
 
-    if (isset($_GET['errors']) || isset($_GET['msg_contacto'])) {
+  if (isset($_GET['errors']) || isset($_GET['msg_contacto'])) {
 
-      ?>
-      <script>
+  ?>
+    <script>
+      var modal = new bootstrap.Modal(document.getElementById('contactModal'), {
+        keyboard: false
+      })
 
-        var modal = new bootstrap.Modal(document.getElementById('contactModal'), {
-          keyboard: false
-        })
+      modal.show()
+    </script>
+  <?php
 
-        modal.show()
-        
-      </script>
-      <?php 
-
-    } 
+  }
 
   ?>
 
